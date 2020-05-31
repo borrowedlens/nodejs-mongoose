@@ -1,0 +1,142 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #4444aa;
+}
+.products-list {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #4444aa;
+}
+.product-container {
+    margin: 20px 0px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+}
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    font-family: sans-serif;
+}
+.cart-container {
+    box-shadow: 1px 1px 6px 4px #cccccc;
+    font-weight: bold;
+}
+.cart-product-container {
+    width: 300px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    align-items: center;
+}
+.outer-order-container {
+    font-weight: bold;
+    width: 800px;
+}
+.order-container {
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 6px 4px #cccccc;
+    font-family: sans-serif;
+    color: #9090ff;
+}
+.order-title {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.order-products {
+    font-size: 14px;
+}
+.price-container {
+    display: flex;
+    margin: 20px;
+    font-weight: bold;
+}
+.product-card {
+    width: 300px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 6px 4px #cccccc;
+    text-align: center;
+}
+.product-title {
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.product-detail-title {
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+.product-price {
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.product-description {
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+img {
+    height: 240px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+.action-btn {
+    margin: 10px;
+    height: 50px;
+    width: 110px;
+    background-color: white;
+    border: 2px solid #9090ff;
+    color: #9090ff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.delete-btn {
+    height: 30px;
+    width: 90px;
+    background-color: white;
+    border: 2px solid #fdaa9f;
+    color: #fdaa9f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 10px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.btn {
+    line-height: 46px;
+}
+.action-btn:hover {
+    background-color: #9090ff;
+    color: #ffffff;
+}
+.delete-btn:hover {
+    background-color: #fdaa9f;
+    color: #ffffff;
+}

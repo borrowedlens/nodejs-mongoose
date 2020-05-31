@@ -1,0 +1,23 @@
+<%- include('../includes/start.ejs') %>
+<link rel="stylesheet" href="/css/shop.css" />
+<%- include('../includes/navigation.ejs') %>
+<main>
+    <div class="product-container">
+        <% if (prods.length > 0) { %> <% for(let product of prods) { %>
+        <div class="product-card">
+            <span class="product-title"><%= product.title %></span>
+            <img src="<%= product.imageUrl %>" alt="" />
+            <div class="product-price">$<%= product.price %></div>
+            <div class="product-description">
+                <%= product.description %>
+            </div>
+            <%- include('../includes/post-to-cart.ejs', {product: product}) %>
+        </div>
+        <% } %> <% } else { %>
+        <div class="title">
+            <h1>no products found</h1>
+        </div>
+        <% } %>
+    </div>
+</main>
+<%- include('../includes/end.ejs') %>

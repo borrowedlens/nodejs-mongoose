@@ -1,0 +1,27 @@
+<%- include('../includes/start.ejs') %>
+<link rel="stylesheet" href="/css/shop.css" />
+<%- include('../includes/navigation.ejs') %>
+<main>
+    <div class="product-details-container">
+        <% if(orders.length > 0) { %>
+        <div class="outer-order-container">
+            <% orders.forEach(order => { %>
+            <div class="order-container">
+                <div class="order-title"><%= order._id %></div>
+                <% order.products.forEach(product => { %>
+                <div class="order-products">
+                    <span><%= product.product.title %></span>
+                    <span>(<%= product.quantity %>)</span>
+                </div>
+                <% }) %>
+            </div>
+            <% }) %>
+        </div>
+        <% } else { %>
+        <div class="title">
+            <h1>cart is empty</h1>
+        </div>
+        <% } %>
+    </div>
+</main>
+<%- include('../includes/end.ejs') %>
